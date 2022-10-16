@@ -3,14 +3,59 @@
     font-family: Arial, Helvetica, sans-serif;
     color: antiquewhite;
     font-size: 20px;
+    user-select: none;
+    padding: 0px;
 }
 body{
     background-color: #313638;
 }
-header{
-    padding: 20px;
-    background-color: rgb(69, 69, 83);
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.headerNaw{
+ul{
+    list-style-type: none;
+    padding: 0px;   
+    border: 1px solid white;
+}
+.menu{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px;  */
+    
+}
+.menu>li{
+    border: 1px solid red;
+    position: relative; 
+    max-width: 300px; 
+    padding: 8px; 
+}
 
+.sub_menu{
+    position: absolute;
+    top: -400px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.5s opacity, top 0s 0.5s ;
 }
+.sub_menu>li{
+    padding: 10px;
+    border-bottom: 1px solid beige;
+    /* width: 200px; */
+    transition: 0.5s;
+    
+    border: 1px solid beige;
+}
+
+.active:hover > ul{
+    top: 40px;
+    opacity: 1;    
+    transition: opacity 0.5s ;    
+}
+.sub_menu>li:hover{
+    background-color: rgb(89, 94, 94);
+   padding-left: 15px;
+   padding-right: 5px;
+       
+} 
