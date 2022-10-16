@@ -17,10 +17,10 @@ body{
 ul{
     list-style-type: none;
     padding: 0px;   
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .menu{
-    background-color: blue;
+    background-color: rgb(25, 64, 82);
     display: flex;   
     flex-wrap: wrap;   
     
@@ -36,29 +36,30 @@ ul{
 }
 
 .sub_menu{
+    /* border: none; */
     position: absolute;
     top: -400px;
     left: 0px;
     opacity: 0;
     transition: 0.5s opacity, top 0s 0.5s ;
-    
+    background-color: #313638;
 }
 
 .sub_menu>li{
     padding: 10px;
     border-bottom: 1px solid beige;
-    /* width: 200px; */
+    width: 280px;
     transition: 0.5s;
     
-    border: 1px solid beige;
+    /* border: 1px solid beige; */
 }
 
-.active:hover > ul{
+.active:active > ul{
     top: 40px;
     opacity: 1;    
     transition: opacity 0.5s ;    
 }
-.sub_menu>li:hover{
+.sub_menu>li:active{
     background-color: rgb(89, 94, 94);
    padding-left: 15px;
    padding-right: 5px;
@@ -93,5 +94,12 @@ td{
     border: 1px whitesmoke solid;
 }
 .content{
-    display: none;
+    /* display: none; */
+    overflow: hidden;
+    max-height: 400px;
+    transition: 1s;
+    margin-top: 5px ;
+}
+.hideContent{
+    max-height: 0px;
 }
