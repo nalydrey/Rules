@@ -12,6 +12,7 @@ body{
 .conteiner{
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 ul{
     list-style-type: none;
@@ -20,16 +21,18 @@ ul{
 }
 .menu{
     background-color: blue;
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 10px;  */
+    display: flex;   
+    flex-wrap: wrap;   
     
 }
 .menu>li{
     border: 1px solid red;
     position: relative; 
     max-width: 300px; 
+    min-width: 150px;
     padding: 8px; 
+    text-align: center;
+    margin-right: 20px;
 }
 
 .sub_menu{
@@ -38,7 +41,9 @@ ul{
     left: 0px;
     opacity: 0;
     transition: 0.5s opacity, top 0s 0.5s ;
+    
 }
+
 .sub_menu>li{
     padding: 10px;
     border-bottom: 1px solid beige;
@@ -59,3 +64,34 @@ ul{
    padding-right: 5px;
        
 } 
+
+/* ---------------------------------------------------------------Section 1 */
+
+.control{
+    padding: 10px;
+    background-color: rgb(45, 73, 45);
+    text-align: center;
+}
+.chapter{
+    border: 1px solid rgb(187, 195, 166);
+    background-color: rgb(90, 77, 61);
+    text-align: center;
+    padding: 5px;
+}
+/* .content{
+    background-color: aqua;
+} */
+table{
+    border: 1px whitesmoke solid;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    border: 1px whitesmoke solid;
+}
+.content{
+    display: none;
+}
