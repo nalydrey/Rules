@@ -9,15 +9,20 @@
 body{
     background-color: #313638;
 }
-.conteiner{
+.container{
     max-width: 1200px;
-    margin: 0 auto;
-   
+    margin: 0 auto;  
 }
 ul{
     list-style-type: none;
     padding: 0px;   
     /* border: 1px solid white; */
+}
+header{
+    background-color: yellow;
+}
+nav{
+    background-color: green;
 }
 .menu{
     background-color: rgb(25, 64, 82);
@@ -29,7 +34,7 @@ ul{
     border: 1px solid red;
     position: relative; 
     max-width: 300px; 
-    min-width: 150px;
+    /* min-width: 150px; */
     padding: 8px; 
     text-align: center;
     margin-right: 20px;
@@ -43,6 +48,7 @@ ul{
     opacity: 0;
     transition: 0.5s opacity, top 0s 0.5s ;
     background-color: #313638;
+    /* display: none; */
 }
 
 .sub_menu>li{
@@ -54,12 +60,12 @@ ul{
     /* border: 1px solid beige; */
 }
 
-.active:active > ul{
+.active:hover > ul{
     top: 40px;
     opacity: 1;    
     transition: opacity 0.5s ;    
 }
-.sub_menu>li:active{
+.sub_menu>li:hover{
     background-color: rgb(89, 94, 94);
    padding-left: 15px;
    padding-right: 5px;
@@ -87,6 +93,7 @@ table{
     border-collapse: separate;
     border-spacing: 10px;
     width: 100%;
+   
 }
 td{
     text-align: center;
@@ -95,7 +102,7 @@ td{
 }
 .content{
     /* display: none; */
-    overflow: hidden;
+    overflow-y: hidden;    
     max-height: 400px;
     transition: 1s;
     margin-top: 5px ;
