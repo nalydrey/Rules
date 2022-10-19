@@ -1,3 +1,4 @@
+/*---------------------------------------------------------------------- Общие настройки */
 * {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,18 +7,44 @@
     user-select: none;
     padding: 0px;
 }
+section{
+    display: none;
+}
+.display{
+    display: none;
+}
 body{
     background-color: #313638;
+    /* overflow: hidden; */
+}
+button{
+    color: #313638;
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 5px;
 }
 .container{
     max-width: 1200px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 ul{
     list-style-type: none;
     padding: 0px;   
     /* border: 1px solid white; */
 }
+.show{
+    display: block;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+
+/* -------------------------------------------------------------Меню */
 .mobile{
     display: none;
     text-align: center;
@@ -38,6 +65,7 @@ ul{
     padding: 8px; 
     text-align: center;
     margin-right: 20px;
+    
 }
 
 .sub_menu{
@@ -48,43 +76,79 @@ ul{
     opacity: 0;
     transition: 0.5s opacity, top 0s 0.5s ;
     background-color: #313638;
+    /* transition: 1s; */
     /* display: none; */
+}
+@media (min-width: 700px){
+    .caption:hover ~ .sub_menu{
+        top: 40px;
+        opacity: 1;    
+        transition: opacity 0.5s ;    
+
+        }
+        .sub_menu>li:hover{
+            background-color: rgb(89, 94, 94);
+            padding-left: 15px;
+            padding-right: 5px;
+            
+        }
+        .caption:hover{
+            text-decoration: underline;
+        }
+        .sub_menu:hover{
+            opacity: 1; 
+            top: 40px;
+        }
 }
 @media (max-width: 700px)
 {
     .sub_menu{
         display: block;
         position: static;
-        max-height: 0;
+        max-height: 0px;
         transition: 1s;
-       overflow: hidden;
-       opacity: 1;
+        overflow: hidden;
+        opacity: 1;        
     }
+    .show_sub_menu{
+        max-height: 400px;
+    }               
+    
     .mobile{
-        display: block;
+        display: block;       
+        
     }
     .menu{
-        display: none;
-        position: absolute;
+        display: none;       
         width: 100%;
         height: 100%;
         background-color: #313638;
         opacity: 0.9;       
         text-align: center;
+        position: fixed;
     }
     .visible{        
-        /* opacity: 1;     */
+        opacity: 1;    
         transition: opacity 0.5s ; 
         max-height: 300px;   
         transition: 1s;
     }
     li.active{        
         margin: 0px auto;
+        /* border-bottom: 1px solid wheat; */
+    }
+    .caption{
         border-bottom: 1px solid wheat;
+        padding: 5px;
+        
     }
     .show{
         display: block;
+    }    
+    .over{
+        overflow: hidden;
     }
+    
 }
 
 .sub_menu>li{
@@ -99,17 +163,13 @@ ul{
     border: 0px;
 }
 
-.active:hover > ul{
-    top: 40px;
-    opacity: 1;    
-    transition: opacity 0.5s ;    
-}
+
+
 .sub_menu>li:hover{
     background-color: rgb(89, 94, 94);
-   padding-left: 15px;
-   padding-right: 5px;
-       
-} 
+    padding-left: 15px;
+    padding-right: 5px;    
+}
 
 /* ---------------------------------------------------------------Section 1 */
 
@@ -148,4 +208,8 @@ td{
 }
 .hideContent{
     max-height: 0px;
+}
+/* ----------------------------------------------------Секция с артиклями */
+#articles{
+    
 }
