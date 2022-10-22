@@ -6,7 +6,7 @@ let subMenu = document.querySelector('.sub_menu')
 // let timesButt = document.querySelector('.timesButt');
 let articleSect = document.querySelector('#articles');
 let timesSect = document.querySelector('#times');
-let collapse = document.querySelector('#collapse');
+let collapse = document.querySelector('.collapse');
 let currentTime = document.querySelector('.curentTime');
 let timeButton = document.querySelector('#timeButton');
 

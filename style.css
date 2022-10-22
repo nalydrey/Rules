@@ -23,6 +23,13 @@ button{
     min-width: 100px;
     border-radius: 5px;
 }
+p{
+    padding: 10px;
+    line-height: 25px;
+}
+.attantion{
+    color: red;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -40,6 +47,17 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+}
+.listLink{
+    list-style-type: circle;
+    margin: 10px;
+    padding-left: 20px;
+}
+.listLink li{
+    padding: 5px;
+}
+.list{
+    color: rgb(133, 133, 191);
 }
 
 
@@ -149,6 +167,7 @@ ul{
         overflow: hidden;
     }
     
+    
 }
 
 .sub_menu>li{
@@ -202,7 +221,7 @@ td{
 .content{
     /* display: none; */
     overflow-y: hidden;    
-    max-height: 400px;
+    max-height: 700px;
     transition: 1s;
     margin-top: 5px ;
 }

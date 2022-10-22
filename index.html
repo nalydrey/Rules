@@ -19,27 +19,30 @@
                     <li class="active" id="timesButt">
                         <span class="caption" data-section="times" id="timeButton">Времена</span>
                         <ul class="sub_menu">
-                            <li data-chose="Simple" >Simple</li>
-                            <li data-chose="Continous" >Continous</li>
-                            <li data-chose="Perfect" >Perfect</li>
-                            <li data-chose="Perfect-Continous" >Perfect Continous</li>
+                            <li data-chose="Simple">Simple</li>
+                            <li data-chose="Continous">Continous</li>
+                            <li data-chose="Perfect">Perfect</li>
+                            <li data-chose="Perfect-Continous">Perfect Continous</li>
                         </ul>
                     </li>
-                    <li class="active">
-                        <span class="caption"  data-section="articles">Артикли</span>
+                    <li class="active" id="specialCase">
+                        <span class="caption" data-section="special">Частные случаи</span>
                     </li>
                     <li class="active">
-                        <span class="caption"  data-section="prepositions" >Предлоги</span>                       
+                        <span class="caption" data-section="articles">Артикли</span>
                     </li>
                     <li class="active">
-                        <span class="caption"  data-section="whatUse">Что использовать?</span>                        
+                        <span class="caption" data-section="prepositions">Предлоги</span>
+                    </li>
+                    <li class="active">
+                        <span class="caption" data-section="whatUse">Что использовать?</span>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <section id="times" class="show">
-<!-- -------------------------------------------------------------------------------Control panel -->
+        <!-- -------------------------------------------------------------------------------Control panel -->
         <div class="container">
             <div class="container control">
                 <button data-time="Past">Past</button>
@@ -47,13 +50,13 @@
                 <button data-time="Future">Future</button>
             </div>
             <div class="info">
-                <h3 class='curentTime'>PR</h3>                
-                <button id="collapse">Разв/Сверн</button>
+                <h3 class='curentTime'>PR</h3>
+                <button class="collapse">Разв/Сверн</button>
             </div>
-<!-- -------------------------------------------------------------------------------End Control panel -->
+            <!-- -------------------------------------------------------------------------------End Control panel -->
 
 
-<!-- ---------------------------------------------------------------------------------Present SIMPLE -->
+            <!-- ---------------------------------------------------------------------------------Present SIMPLE -->
             <div class="display" data-display="PresentSimple">
                 <div class="chapter">Утвердительное</div>
                 <div class="content hideContent">
@@ -94,7 +97,7 @@
                             <td>He, She, It</td>
                             <td>is / (he's, she's, it's)</td>
                         </tr>
-    
+
                     </table>
                 </div>
                 <div class="chapter affirmative">Утвердительноe с глаголом to have</div>
@@ -187,7 +190,7 @@
                 <div class="chapter interrogative">Вопросительное</div>
                 <div class="content hideContent">
                     <table>
-    
+
                         <tr>
                             <td>Вопросительное слово</td>
                             <td>Вспомагательный глагол</td>
@@ -239,7 +242,7 @@
                             <td>Вопросительное слово</td>
                             <td>Глагол to have</td>
                             <td>Местоимение</td>
-    
+
                         </tr>
                         <tr>
                             <td rowspan="3">What, Who, When и др</td>
@@ -248,7 +251,7 @@
                         </tr>
                         <tr>
                             <td>You, We, They</td>
-    
+
                         </tr>
                         <tr>
                             <td>has</td>
@@ -258,14 +261,14 @@
                 </div>
                 <div class="chapter"></div>
             </div>
-<!-- ---------------------------------------------------------------------------End SIMPLE -->
+            <!-- ---------------------------------------------------------------------------End SIMPLE -->
 
-<!-- ---------------------------------------------------------------------------  past simple  -->
-            <div class="display" data-display="PastSimple" >
+            <!-- ---------------------------------------------------------------------------  past simple  -->
+            <div class="display" data-display="PastSimple">
                 Пока не готово
             </div>
 
-<!-- ---------------------------------------------------------------------------  past simple  -->
+            <!-- ---------------------------------------------------------------------------  past simple  -->
             <div class="display" data-display="FutureSimple">
                 Пока не готово
             </div>
@@ -274,31 +277,164 @@
     <section id="articles">
         <div class="container">
             <div class="chapter the">The</div>
-            <div class="content hideContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic vel nesciunt neque ab
-                dignissimos nulla. Ab velit fugit consequatur, voluptas est quibusdam, id minus dolorem error ea nesciunt
-                voluptates!
+            <div class="content hideContent">
+                <ul class="listLink">
+                    <li>порядковые еорядковые числительные</li>
+                    <li>если существительное определено по ситуации</li>
+                    <li>существительное после прилагательного <span class="list">all</span></li>
+                    <li>прилагательные в превосходной степени</li>
+                    <li>уникальные обьекты</li>
+                    <li>существительные указывающие на местоположения обьекта и следующего после него глагола <span
+                            class="list">to be</span></li>
+                    <li>при указании направления движения употребляется предлог <span class="list">to</span>
+                        существительное следующее за ним употребляется с определенным артиклем</li>
+
+                    <li>существительное во <span class="list">Where is / are</span> + the подлежащее</li>
+                    <li><span class="list">time</span> в значении час</li>
+                    <li>при указании места нахождения в каком то помещении или замкнутом пространства употребляется
+                        предлог <span class="list">in</span>. Существительное следующее за ним употребляется с
+                        определенным артиклем</li>
+                    <li>существительные следующие друг за другом и связанные союзом <span class="list">and</span></li>
+                </ul>
             </div>
             <div class="chapter an">a / an</div>
-            <div class="content hideContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic vel nesciunt neque ab
-                dignissimos nulla. Ab velit fugit consequatur, voluptas est quibusdam, id minus dolorem error ea nesciunt
-                voluptates!
+            <div class="content hideContent">
+                <ul class="listLink">
+                    <li>исчисляемое существительное в единственном числе</li>
+                    <li>прилагательное с существительным</li>
+                    <li>существительное следующее после конструкции <span class="list">(he / she / it / this / that)
+                            is</span></li>
+                    <li><span class="list">to become</span> + a/ an + существительное</li>
+                    <li>существительное следующее после конструкции <span class="list">(I / you / we / they) have; (he /
+                            she
+                            / it) has</span></li>
+                    <li>после местоимения <span class="list">such</span></li>
+                </ul>
             </div>
+
             <div class="chapter zero">zero-article</div>
-            <div class="content hideContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic vel nesciunt neque ab
-                dignissimos nulla. Ab velit fugit consequatur, voluptas est quibusdam, id minus dolorem error ea nesciunt
-                voluptates!
+            <div class="content hideContent">
+                <ul class="listLink">
+                    <li>прилагательное в превосходной степени после местоимения</li>
+                    <li>связка прилагательного с существительным во множественном числе или неисчисляемое
+                        существительное</li>
+                    <li>колличественные числительные</li>
+                    <li>неисчисляемые существительные</li>
+                    <li>существительные во множественном числе если они не определены по ситуации</li>
+                    <li>времена года</li>
+                    <li>имена, фамилии</li>
+                    <li>напитки, блюда</li>
+                    <li>виды спотра</li>
+                    <li>континенты, страны, города, улицы, площади, парки</li>
+                    <li>праздники</li>
+                    <li>названия предметов</li>
+                    <li>компании, фирмы</li>
+                    <li><span class="list">time</span> в значении время</li>
+                </ul>
             </div>
         </div>
     </section>
     <section id="prepositions">
         <div class="container">
-            Пока не готово
+            <div class="chapter to">to</div>
+            <div class="content hideContent">
+                <ul class="listLink">
+                    <li>направление движения куда-то, к какому-то объекту <span class='list'>(Куда?)</span> Кроме: home,
+                        here, there</li>
+                    <li>движение, когда какому-то что-то дают или дарят <span class='list'>(Кому?)</span><br>
+                        give you the book <br>
+                        give the book <span class='list'>to</span> you
+                    </li>
+                    <li>со словами <span class='list'>talk, speak, say</span> + to</li>
+                    <li>в значении "для того что-бы"<br>
+                        we eat <span class='list'>to</span> live (мы едим, что бы жить)
+                    </li>
+                </ul>
+            </div>
+            <div class="chapter by">by</div>
+            <div class="content hideContent">
+                <ul class="listLink">
+                    <li>в значении <span class="list">около, у</span>:<br>
+                        by the window (у окна)</li>
+                    <li>с вопросами <span class="list">кем? чем?</span> в пассивном залоге<br>
+                        made by (сделанный кем то)</li>
+                    <li>путем чего-то. После этого идет герундий<br>
+                        I learn new words <span class="list">by</span> reading books (Я учу слова, путем чтения книг)
+                    </li>
+                    <li>подразумевать под этим..., иметь в виду.</li>
+                    <li>ехать на... <br>to do by bus</li>
+                    <li>к (какому-то времени)</li>
+                    <li>с помощью чего-то (не путать с <span class="list">with</span> (с помощью инструмента))</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="whatUse">
         <div class="container">
-            Пока не готово
+
+
         </div>
+    </section>
+    <section id="special">
+        <div class="container">
+            <div class="chapter firstGroup">Правило согласования времен 1-я группа</div>
+            <div class="content hideContent">
+                <p>Когда в главним предложении сказуемое является глаголом в в настоящем или в будущем времени, тогда в
+                    придаточном предложении будет использовано любое время, которое подходит по смыслу.</p>
+            </div>
+            <div class="chapter firstGroup">Правило согласования времен 2-я группа</div>
+            <div class="content hideContent">
+                <p>Когда в главной части предложения сказуемое является глаголом в прошедшем времени (как правило Past
+                    Simple), то в придаточном предложении <span class="attantion">не может</span> использоваться
+                    настоящее или будущее
+                    время, а используется одна из форм прошедшего времени или форма Future in the Past (будущее в
+                    прошедшем)</p>
+            </div>
+            <div class="chapter firstGroup">Общее вопросительное выражение в косвенной речи</div>
+            <div class="content hideContent">
+                <p>В косвенной речи вопросы имеют прямой порядок слов, а вопросительный знак, а вопросительный знак в
+                    конце предложенияя заменяется на точку. Общие вопросы вводятся союзами <span class="list">if</span>
+                    или <span class="list">whether</span>.</p>
+            </div>
+            <div class="chapter firstGroup">Вопросительное предложение в простом настоящем времени с специальным словом What
+            </div>
+            <div class="content hideContent">
+                <p>Если в вопросительном предложении настоящего времени с специальным вопросительным словом
+                    <span class = 'list'>What</span> (в значении что) отсутствует подлежащее, отвечающее на вопрос <span class = 'list'>что?</span> то вспомагательный
+                    глагол <span class = 'list'>do / does</span> не употребляется, а используется основной глагол с окончанием
+                    <span class = 'list'>-s</span> или <span class = 'list'>-es</span>.
+                </p>
+            </div>
+            <div class="chapter firstGroup">Вопросительное предложение в простом настоящем времени с специальным словом Who
+            </div>
+            <div class="content hideContent">
+                <p>Если в вопросительном предложении настоящего времени с специальным вопросительным словом
+                    <span class = 'list'>Who</span> (в значении кто) отсутствует подлежащее, отвечающее на вопрос <span class = 'list'>кто?</span> то вспомагательный
+                    глагол <span class = 'list'>do / does</span> не употребляется, а используется основной глагол с окончанием
+                    <span class = 'list'>-s</span> или <span class = 'list'>-es</span>.
+                </p>
+            </div>
+            <div class="chapter firstGroup">Вопросительное предложение в простом прошедшем времени с специальным словом What
+            </div>
+            <div class="content hideContent">
+                <p>Если в вопросительном предложении настоящего времени с специальным вопросительным словом
+                    <span class = 'list'>What</span> (в значении что) отсутствует подлежащее, отвечающее на вопрос <span class = 'list'>что?</span> то вспомагательный
+                    глагол <span class = 'list'>did</span> не употребляется, а используется основной глагол с окончанием
+                    <span class = 'list'>-ed</span> или <span class = 'list'>2-я форма основного глагола</span>.
+                </p>
+            </div>
+            <div class="chapter firstGroup">Вопросительное предложение в простом прошедшем времени с специальным словом Who
+            </div>
+            <div class="content hideContent">
+                <p>Если в вопросительном предложении настоящего времени с специальным вопросительным словом
+                    <span class = 'list'>Who</span> (в значении кто) отсутствует подлежащее, отвечающее на вопрос <span class = 'list'>кто?</span> то вспомагательный
+                    глагол <span class = 'list'>did</span> не употребляется, а используется основной глагол с окончанием
+                    <span class = 'list'>-ed</span> или <span class = 'list'>2-я форма основного глагола</span>.
+                </p>
+            </div>
+
+        </div>
+
     </section>
 
 
