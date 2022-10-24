@@ -213,6 +213,12 @@ table{
     width: 100%;
    
 }
+th{
+    text-align: center;
+    padding: 10px;
+    border: 1px whitesmoke solid;
+    color: rgb(95, 108, 138);
+}
 td{
     text-align: center;
     padding: 10px;
